@@ -1,3 +1,4 @@
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ===== BODY ===== */
 body {
     min-height: 100vh;
     background:
@@ -22,22 +24,25 @@ body {
 /* ===== NAVBAR ===== */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 18px 60px;
     background: rgba(15, 23, 42, 0.9);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #1e293b;
+    position: relative;
 }
 
+/* Logo */
 .logo {
-    font-family: 'Great Vibes', cursive; 
+    font-family: 'Great Vibes', cursive;
     font-size: 22px;
     font-weight: 900;
     color: #38bdf8;
     letter-spacing: 1px;
 }
 
+/* Desktop Nav */
 .navbar ul {
     list-style: none;
     display: flex;
@@ -66,12 +71,82 @@ body {
     width: 100%;
 }
 
-/* ===== RESPONSIVE NAVBAR ===== */
+/* ===== HAMBURGER ===== */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: #38bdf8;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+/* ===== MOBILE NAVBAR ===== */
 @media (max-width: 900px) {
+
     .navbar {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 12px 20px;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.95);
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+}
+
+/* ===== GLOBAL MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    section {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    body {
+        background-position: 40% top;
+    }
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #0f172a;
 }
 
 /* ===== FOOTER ===== */
@@ -115,97 +190,4 @@ body {
 .footer-content span {
     font-size: 13px;
     color: #64748b;
-}
-/* =========================
-   MOBILE RESPONSIVE (GLOBAL)
-   ========================= */
-@media (max-width: 768px) {
-
-    /* NAVBAR */
-    .navbar {
-        padding: 12px 20px;
-    }
-
-    .navbar ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .navbar ul li a {
-        font-size: 14px;
-    }
-
-    /* PAGE SECTIONS */
-    section {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-
-    h1 {
-        font-size: 28px !important;
-    }
-}
-/* =========================
-   BACKGROUND FIX – MOBILE PORTRAIT
-   ========================= */
-@media (max-width: 768px) {
-
-    body {
-        background-position: 40% top;
-    }
-
-}
-
-/* ===== BUTTON STYLES ===== */
-.btn {
-    display: inline-block;
-    padding: 12px 26px;
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-    color: #0f172a;
-}
-
-/* ===== HAMBURGER MENU ===== */
-.hamburger {
-    display: none;
-    font-size: 28px;
-    color: #38bdf8;
-    cursor: pointer;
-}
-
-/* Mobile Navbar */
-@media (max-width: 900px) {
-    .hamburger {
-        display: block;
-    }
-
-    nav {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        background: rgba(15, 23, 42, 0.95);
-        display: none;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    nav ul li {
-        margin: 15px 0;
-    }
-
-    nav.active {
-        display: block;
-    }
 }
