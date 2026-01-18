@@ -57,7 +57,12 @@
         padding: 60px 30px;
     }
 
+    .hero-image {
+        order: 1;   /* image first */
+    }
+
     .hero-text {
+        order: 2;   /* text after image */
         max-width: 100%;
         align-items: center;
     }
@@ -67,9 +72,10 @@
     }
 
     .hero-image img {
-        margin-top: 35px;
+        margin-bottom: 35px;
     }
 }
+
 
 /* ===== STYLISH NAME ===== */
 .name-highlight {
