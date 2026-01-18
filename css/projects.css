@@ -1,0 +1,76 @@
+/* ===== PROJECTS PAGE ===== */
+.projects-page {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px;
+}
+
+.projects-page h1 {
+    font-size: 38px;
+    color: #38bdf8;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* ===== GRID ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+/* ===== CARD ===== */
+.project-card {
+    background: rgba(15, 23, 42, 0.7);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #1e293b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(56, 189, 248, 0.15);
+}
+
+.project-card h2 {
+    font-size: 20px;
+    color: #f8fafc;
+    margin-bottom: 6px;
+}
+
+.project-duration {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.project-card p {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #cbd5f5;
+    margin: 15px 0 20px;
+}
+
+/* ===== TECH STACK TAGS ===== */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-stack span {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .projects-page {
+        margin: 40px 20px;
+        padding: 20px;
+    }
+}

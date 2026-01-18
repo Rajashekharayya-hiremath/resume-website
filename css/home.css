@@ -1,0 +1,67 @@
+/* ===== HERO SECTION ===== */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background: transparent;
+}
+
+.hero-text {
+    max-width: 55%;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #f8fafc;
+}
+
+.hero-text h2 {
+    font-size: 26px;
+    margin: 12px 0;
+    color: #38bdf8;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #cbd5f5;
+    margin-top: 15px;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+}
+
+/* ===== RESPONSIVE HOME ===== */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 30px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        margin-bottom: 40px;
+    }
+}
+
+/* ===== STYLISH NAME ===== */
+.name-highlight {
+    font-family: 'Dancing Script', cursive;
+    font-size: 56px;
+    font-weight: 700;
+    color: #e0f2fe; /* soft light blue */
+    letter-spacing: 1px;
+}

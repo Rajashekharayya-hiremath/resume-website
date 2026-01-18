@@ -1,0 +1,78 @@
+/* ===== EDUCATION PAGE ===== */
+.education-page {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+}
+
+.education-page h1 {
+    font-size: 38px;
+    color: #38bdf8;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    border-left: 2px solid #1e293b;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+.timeline-content {
+    background: rgba(15, 23, 42, 0.7);
+    padding: 25px 30px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+}
+
+.timeline-content h2 {
+    font-size: 20px;
+    color: #f8fafc;
+    margin-bottom: 6px;
+}
+
+.timeline-content h3 {
+    font-size: 16px;
+    color: #cbd5f5;
+    margin-bottom: 8px;
+}
+
+.timeline-content span {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.timeline-content p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #e5e7eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .education-page {
+        margin: 40px 20px;
+        padding: 20px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+}
