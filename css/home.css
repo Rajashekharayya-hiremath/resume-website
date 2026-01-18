@@ -10,6 +10,8 @@
 
 .hero-text {
     max-width: 55%;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-text h1 {
@@ -31,6 +33,13 @@
     margin-top: 15px;
 }
 
+/* DOWNLOAD BUTTON */
+.download-btn {
+    margin-top: 22px;
+    align-self: flex-start;
+}
+
+/* PROFILE IMAGE */
 .hero-image img {
     width: 300px;
     height: 300px;
@@ -40,20 +49,25 @@
     box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
 }
 
-/* ===== RESPONSIVE HOME ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
     .hero {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         padding: 60px 30px;
     }
 
     .hero-text {
         max-width: 100%;
+        align-items: center;
+    }
+
+    .download-btn {
+        align-self: center;
     }
 
     .hero-image img {
-        margin-bottom: 40px;
+        margin-top: 35px;
     }
 }
 
@@ -62,26 +76,6 @@
     font-family: 'Dancing Script', cursive;
     font-size: 56px;
     font-weight: 700;
-    color: #e0f2fe; /* soft light blue */
+    color: #e0f2fe;
     letter-spacing: 1px;
 }
-.hero-buttons {
-    margin-top: 25px;
-}
-/* Ensure download button stays with text on all screens */
-.hero-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.hero-buttons {
-    margin-top: 20px;
-}
-@media (max-width: 1024px) {
-    .hero-text {
-        align-items: center;
-        text-align: center;
-    }
-}
-
