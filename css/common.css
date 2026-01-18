@@ -146,3 +146,13 @@ body {
         font-size: 28px !important;
     }
 }
+/* =========================
+   BACKGROUND FIX – MOBILE PORTRAIT
+   ========================= */
+@media (max-width: 768px) {
+
+    body {
+        background-position: center top;
+    }
+
+}
